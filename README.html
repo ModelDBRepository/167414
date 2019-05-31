@@ -1,0 +1,73 @@
+<html><pre>
+This is the README for the model associated with the publication:
+
+1. Casellato C., Antonietti A., Garrido J.A., Carrillo R.R., Luque
+   N.R., Ros E., Pedrocchi A., D'Angelo E. (2014) Adaptive Robotic
+   Control Driven by a Versatile Spiking Cerebellar Network. PLOS ONE.
+   DOI: 10.1371/journal.pone.0112265
+
+The cerebellum is involved in a large number of different neural
+processes, especially in associative learning and in fine motor
+control. To develop a comprehensive theory of sensorimotor learning
+and control, it is crucial to determine the neural basis of coding and
+plasticity embedded into the cerebellar neural circuit and how they
+are translated into behavioral outcomes in learning paradigms.
+Learning has to be inferred from the interaction of an embodied system
+with its real environment, and the same cerebellar principles derived
+from cell physiology have to be able to drive a variety of tasks of
+different nature, calling for complex timing and movement patterns.
+We have coupled a realistic cerebellar spiking neural network (SNN)
+with a real robot and challenged it in multiple diverse sensorimotor
+tasks. Encoding and decoding strategies based on neuronal firing rates
+were applied. Adaptive motor control protocols with acquisition and
+extinction phases have been designed and tested, including an
+associative Pavlovian task (Eye blinking classical conditioning), a
+vestibulo-ocular task and a perturbed arm reaching task operating in
+closed-loop. The SNN processed in real-time mossy fiber inputs as
+arbitrary contextual signals, irrespective of whether they conveyed a
+tone, a vestibular stimulus or the position of a limb. A bidirectional
+long-term plasticity rule implemented at parallel fibers-Purkinje cell
+synapses modulated the output activity in the deep cerebellar nuclei.
+In all the tasks, the neurorobot learned to adjust timing and gain of
+the motor responses by tuning its output discharge. It succeeded in
+reproducing how human biological systems acquire, extinguish and
+express knowledge of a noisy and changing world. By varying
+stimuli/perturbations patterns, real-time control robustness and
+generalizability were validated. The implicit spiking dynamics of the
+cerebellar model fulfill timing, prediction and learning functions.
+
+Usage:
+
+The first step is to copy the Look-Up Tables of the neurons, from the
+following link
+< a href="https://dl.dropboxusercontent.com/u/71738784/Neuron_Models.rar">https://dl.dropboxusercontent.com/u/71738784/Neuron_Models.rar</a>.
+
+Both the .cfg and .dat files need to be in the directory where the
+EDLUT_CEREBELLUM.exe is launched.
+
+Then, using a Windows O.S. (32bit or 64bit) you can simply execute the
+file EDLUT3.exe and choose in the prompt the protocol you want to test
+(1: ISI = 200 ms, 2: ISI = 300 ms, 3: ISI = 400 ms).
+
+ Files included in this zip:
+
+The following files are included:
+
+- EDLUT_CEREBELLUM.exe: the EDLUT-based cerebellar simulator used for
+  the three simulations.
+
+- EBCC_200ms_ANALYSIS.m: Matlab script to analyze the results from the
+  EDLUT output files (they will be saved in the sub-folder
+  /SAVED_FILES) for the protocol with ISI = 200ms. It show the raster
+  plots of MF, PC, DCN and IO, the firing rate plots in 2D and 3D, the
+  CR percentage evaluation and the weights modification at the level
+  of PF-PC synapses.
+  
+- net.cfg: The network description files for EDLUT simulator.
+  
+- weights.dat: The initial synaptic weights file of the three
+  protocols.
+
+These model files were supplied by Alberto Antonietti. If you have any
+question/comments/feedback, please send me an email to
+alberto.antonietti@polimi.it.
